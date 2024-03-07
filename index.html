@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Cambiar título -->
+    <title>Casa Prestamo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="formPrestamo">
+    <!-- Cambiar título -->
+    <h3>Proyecto Casa Prestamo </h3>
+      <table id="formPrestamoTabla">
+        <tr>
+          <!-- Agregar encabezados de columnas -->
+          <th>Cedula</th>
+          <th>Nombre</th>
+          <th>Edad</th>
+          <th>Sexo</th>
+          <th>Estado Civil</th>
+          <th>Nota</th>
+          <th>Aprobado</th>
+        </tr>
+      </table>
+      <!-- Agregar salidas de clse Prestamo -->
+      <h5>Porcentaje de creditos aprobados: <span id="formPrestamoLblReporte1">?</span></h5>
+      <h5>Porcentaje de creditos no aprobados: <span id="formPrestamoLblReporte2">?</span></h5>
+      <!-- Ajustar inner del botón -->
+      <button id="formPrestamoBtAgregarComerciante">Agregar Comerciante</button>
+      <button id="formPrestamoBtAgregarEstudiante">Agregar Estudiante</button>
+    </section>
+
+    <section id="formComerciante">
+      <h3>Datos del Comerciante ??</h3>
+      <!-- Indicar inputs 
+        Ajustar placeholder -->
+      <input type="text" id="formComercianteInCedula" placeholder="Cedula"></input>
+      <input type="text" id="formComercianteInNombre" placeholder="Nombre"></input>
+      <input type="text" id="formComercianteInEdad" placeholder="Edad"></input>
+      <input type="text" id="formComercianteInSexo" placeholder="Sexo"></input>
+      <input type="text" id="formComercianteInEdoCivil" placeholder="Estado Civil"></input>
+      
+      <button id="formComercianteBtAceptar">Aceptar</button> 
+    </section>
+    <section id="formEstudiante">
+      <h3>Datos del Estudiante ??</h3>
+      <input type="text" id="formEstudianteInCedula" placeholder="Cedula"></input>
+      <input type="text" id="formEstudianteInNombre" placeholder="Nombre"></input>
+      <input type="text" id="formEstudianteInEdad" placeholder="Edad"></input>
+      <input type="text" id="formEstudianteInSexo" placeholder="Sexo"></input>
+      <input type="text" id="formEstudianteInEdoCivil" placeholder="Estado Civil"></input>
+      <input type="text" id="formEstudianteInNota" placeholder="Nota"></input>
+
+      <button id="formEstudianteBtAceptar">Aceptar</button>
+    </section>
+  </body>
+  <script type="module">
+    import Cl_main from "./js/Cl_main.js";
+    // Quitar comentario antes de correr el programa
+      new Cl_main()
+ </script>
+</html>
