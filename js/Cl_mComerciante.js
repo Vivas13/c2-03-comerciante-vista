@@ -1,8 +1,8 @@
 import Cl_mPersona from "./Cl_mPersona";
 
 export default class Cl_mComerciante extends Cl_mPersona{
-    constructor({cedula, nombre, edad, sexo, Edocivil}){
-        super(cedula, nombre, edad, sexo, Edocivil)
+    constructor({cedula, nombre, edad, sexo, EdoCivil}){
+        super(cedula, nombre, edad, sexo, EdoCivil)
     }
 
     Aprobado(){
@@ -10,7 +10,7 @@ export default class Cl_mComerciante extends Cl_mPersona{
         return "si"
         else if(this.sexo==="F" && this.EdoCivil===2)
         return "si"
-        
+        else
         return "no"
     }
 }

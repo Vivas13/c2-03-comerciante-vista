@@ -36,9 +36,9 @@ export default class Cl_vEstudiante {
       Nota: this.inNota.value,
 
     });
-    /** Colocar nombre correcto del procesar */
-    this.app.mPrestamo.procesarEstudiante(Estudiante);
-    this.app.vPrestamo.reportar(Estudiante);
+    /** Colocar nombre correcto del  */
+    this.app.mPrestamo.procesarPersona(Estudiante);
+    this.app.vPrestamo.reportarPersona(Estudiante);
     this.ocultar();
     this.app.vPrestamo.mostrar();
   }

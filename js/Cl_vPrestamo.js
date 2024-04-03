@@ -10,8 +10,8 @@ export default class Cl_vPrestamo {
     this.btAgregarComerciante = document.getElementById("formPrestamoBtAgregarComerciante");
     this.btAgregarEstudiante = document.getElementById("formPrestamoBtAgregarEstudiante");
     /** declarar etiquetas de salidas clase Prestamo */
-    this.lblReporte1 = document.getElementById("formPrestamoLblReporte1");
-    this.lblReporte2 = document.getElementById("formPrestamoLblReporte2");
+    this.lblPorc_c_Aprobado= document.getElementById("formPrestamoLblPorc_c_Aprobado");
+    this.lblPorc_c_N_Aprobado= document.getElementById("formPrestamoLblPorc_c_N_Aprobado");
 
     this.btAgregarComerciante.onclick = () => {
       this.ocultar();
@@ -41,13 +41,14 @@ export default class Cl_vPrestamo {
     <td>${Persona.Edad}</td>
     <td>${Persona.Sexo}</td>
     <td>${Persona.EdoCivil}</td>
-    <td>${Persona.Nota ? Persona.Nota : "--"}</td>
+    <td>${Persona instanceof Cl_mEstudiante? "Estudiante" : "Comerciante"}</td>
+    <td>${Persona.Nota? Persona.Nota: "--"}</td>
     <td>${Persona.Aprobado()}</td>
     </tr>`;
 
     /** Asignar valores a etiquetas de salida */
-    this.lblReporte1.innerHTML = this.app.mPrestamo.Porc_c_Aprobado();
-    this.lblReporte2.innerHTML = this.app.mPrestamo.Porc_c_N_Aprobado();
+    this.lblPorc_c_Aprobado.innerHTML = this.app.mPrestamo.Porc_c_Aprobado();
+    this.lblPorc_c_N_Aprobado.innerHTML = this.app.mPrestamo.Porc_c_N_Aprobado();
     
   }
 }

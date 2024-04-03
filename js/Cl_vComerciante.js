@@ -34,8 +34,8 @@ export default class Cl_vComerciante {
       EdoCivil: this.inEdoCivil.value,
     });
     /** Colocar nombre correcto del procesar */
-    this.app.mPrestamo.procesarComerciante(Comerciante);
-    this.app.vPrestamo.reportar(Comerciante);
+    this.app.mPrestamo.procesarPersona(Comerciante);
+    this.app.vPrestamo.reportarPersona(Comerciante);
     this.ocultar();
     this.app.vPrestamo.mostrar();
   }

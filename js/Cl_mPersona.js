@@ -1,11 +1,11 @@
 
 export default class Cl_mPersona{
-    constructor(cedula, nombre, edad, sexo, Edocivil){
+    constructor(cedula, nombre, edad, sexo, EdoCivil){
         this.cedula= cedula;
         this.nombre= nombre;
         this.edad= edad;
         this.sexo= sexo;
-        this.EdoCivil= Edocivil;
+        this.EdoCivil= EdoCivil;
     }
 
     set cedula(cedula){
