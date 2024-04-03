@@ -36,10 +36,10 @@ export default class Cl_vPrestamo {
      * */
     this.tabla.innerHTML += `
     <tr>
-    <td>${Persona.Cedula}</td>
-    <td>${Persona.Nombre}</td>
-    <td>${Persona.Edad}</td>
-    <td>${Persona.Sexo}</td>
+    <td>${Persona.cedula}</td>
+    <td>${Persona.nombre}</td>
+    <td>${Persona.edad}</td>
+    <td>${Persona.sexo}</td>
     <td>${Persona.EdoCivil}</td>
     <td>${Persona instanceof Cl_mEstudiante? "Estudiante" : "Comerciante"}</td>
     <td>${Persona.Nota? Persona.Nota: "--"}</td>

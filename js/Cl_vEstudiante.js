@@ -28,10 +28,10 @@ export default class Cl_vEstudiante {
      * Renombrar instancia "Estudiante" y construirla con las entradas respectivas
      */
     let Estudiante = new Cl_mEstudiante({
-      Cedula: this.inCedula.value,
-      Nombre: this.inNombre.value,
-      Edad: this.inEdad.value,
-      Sexo: this.inSexo.value,
+      cedula: this.inCedula.value,
+      nombre: this.inNombre.value,
+      edad: this.inEdad.value,
+      sexo: this.inSexo.value,
       EdoCivil: this.inEdoCivil.value,
       Nota: this.inNota.value,
 

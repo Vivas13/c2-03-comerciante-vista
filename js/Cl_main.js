@@ -11,7 +11,7 @@ export default class Cl_main {
     this.app = {};
     this.app.mPrestamo = new Cl_mPrestamo();
     this.app.vEstudiante = new Cl_vEstudiante(this.app);
-   this.app.vComerciante = new Cl_vComerciante(this.app);
+    this.app.vComerciante = new Cl_vComerciante(this.app);
     this.app.vPrestamo = new Cl_vPrestamo(this.app);
   }
 }

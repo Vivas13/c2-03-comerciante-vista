@@ -2,7 +2,7 @@ import Cl_mPersona from "./Cl_mPersona";
 
 export default class Cl_mEstudiante extends Cl_mPersona {
     constructor({cedula, nombre, edad, sexo, EdoCivil, Nota}){
-        super(cedula, nombre, edad, sexo, EdoCivil)
+        super(cedula, nombre, edad, sexo, EdoCivil);
         this.Nota= Nota;
     }
     set Nota(Nota){
