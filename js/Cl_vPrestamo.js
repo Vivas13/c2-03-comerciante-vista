@@ -41,7 +41,7 @@ export default class Cl_vPrestamo {
     <td>${Persona.edad}</td>
     <td>${Persona.sexo}</td>
     <td>${Persona.EdoCivil}</td>
-    <td>${Persona instanceof Cl_mEstudiante? "Estudiante" : "Comerciante"}</td>
+    <td>${Persona instanceof Cl_mComerciante? "Comerciante" : "Estudiante"}</td>
     <td>${Persona.Nota? Persona.Nota: "--"}</td>
     <td>${Persona.Aprobado()}</td>
     </tr>`;
